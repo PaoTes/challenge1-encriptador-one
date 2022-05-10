@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 30px;
+    background: #e7cbec;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h6 {
+    display: flex;
+}
+
+textarea {
+    border: none;
+}
+
+.botones {
+    width: 100%;
+}
+
+.btnEncriptar,
+.btnDesencriptar,
+.copiar-contenido {
+    margin: 10px 5px 10px 5px;
+    padding: 24px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    width: 45%;
+    font-size: 18px;
+    color: #fff;
+    display: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.copiar-contenido {
+    float: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: bottom;
+    justify-content: flex-end;
+
+}
+
+.input-text {
+    color: #0A3871;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 32px;
+    width: 90%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 350px;
+    align-items: center;
+
+}
+
+.input-text-area {
+    color: #495057;
+    font-size: 24px;
+    line-height: 32px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+section {
+    flex: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    flex: 30%;
+    background: #fff;
+    border-radius: 25px;
+    margin: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 10px -5px grey;
+
+
+}
+
+.mensaje-vacio {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mensaje-vacio p {
+    padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+
+    section,
+    aside {
+        flex: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-text {
+        height: 150px;
+    }
+
+    .input-text-area {
+        height: 100px;
+    }
+
+    .img-muneco {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    section,
+    aside {
+        flex: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-muneco {
+        display: none;
+    }
+
+    .input-text,
+    .input-text-area {
+        height: 150px;
+    }
+
+    .btnEncriptar,
+    .btnDesencriptar,
+    .copiar-contenido {
+        width: 100%;
+        font-size: 18px;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+
+    }
+
+    .copiar-contenido {
+        width: 90%;
+    }
+
+}
